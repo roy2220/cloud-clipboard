@@ -35,7 +35,7 @@ commit_point=1
 virtualenv --python python3 "${venv_dir}/${project}"
 commit_point=2
 
-"${venv_dir}/${project}/bin/pip" install --requirement requirements.txt
+"${venv_dir}/${project}/bin/pip" install --requirement "${dir}/requirements.txt"
 
 tee > "${bin_dir}/cloud-clipboard" << EOF
 #!/bin/sh
